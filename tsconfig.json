@@ -10,7 +10,8 @@
       "@/atom/*": ["components/atom/*"],
       "@/molecule/*": ["components/molecule/*"],
       "@/organism/*": ["components/organism/*"],
-      "@/template/*": ["components/template/*"]
+      "@/template/*": ["components/template/*"],
+      "@/styles/*": ["styles/*"]
     },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
@@ -26,6 +27,6 @@
     "isolatedModules": true,
     "jsx": "preserve"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }
