@@ -8,6 +8,7 @@ const linking: LinkingOptions<RootStackParamList> = {
     screens: {
       Top: 'top',
       Config: 'config',
+      Stub: 'stub',
     },
   },
 }
