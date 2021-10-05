@@ -1,26 +1,21 @@
-import { StatusBar } from 'expo-status-bar'
-import { NativeBaseProvider, Box } from 'native-base'
+import { NativeBaseProvider } from 'native-base'
 import React from 'react'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
 import { RecoilRoot } from 'recoil'
 import useCachedResources from './hooks/useCachedResources'
-import useColorScheme from './hooks/useColorScheme'
-import Navigation from './navigation'
-import { theme } from './styles/theme'
+import Navigation from '@/navigation/index'
 
-export default function App() {
+export default () => {
   const isLoadingComplete = useCachedResources()
-  const colorScheme = useColorScheme()
 
   if (!isLoadingComplete) {
     return null
   } else {
     return (
       <RecoilRoot>
-        <NativeBaseProvider theme={theme}>
+        <NativeBaseProvider>
           <SafeAreaProvider>
-            <Navigation colorScheme={colorScheme} />
-            <StatusBar />
+            <Navigation />
           </SafeAreaProvider>
         </NativeBaseProvider>
       </RecoilRoot>

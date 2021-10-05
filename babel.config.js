@@ -19,6 +19,8 @@ module.exports = function (api) {
             '@/organism': path.resolve(__dirname, 'components/organism'),
             '@/template': path.resolve(__dirname, 'components/template'),
             '@/styles': path.resolve(__dirname, 'styles'),
+            '@/navigation': path.resolve(__dirname, 'navigation'),
+            '@/screen': path.resolve(__dirname, 'screens'),
           },
         },
       ],

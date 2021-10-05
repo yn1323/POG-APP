@@ -11,7 +11,9 @@
       "@/molecule/*": ["components/molecule/*"],
       "@/organism/*": ["components/organism/*"],
       "@/template/*": ["components/template/*"],
-      "@/styles/*": ["styles/*"]
+      "@/styles/*": ["styles/*"],
+      "@/navigation/*": ["navigation/*"],
+      "@/screen/*": ["screens/*"]
     },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
@@ -27,6 +29,6 @@
     "isolatedModules": true,
     "jsx": "preserve"
   },
-  "include": ["**/*.ts", "**/*.tsx"],
+  "include": ["**/*.ts", "**/*.tsx", "navigation/*"],
   "exclude": ["node_modules"]
 }
